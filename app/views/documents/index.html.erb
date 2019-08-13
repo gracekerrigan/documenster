@@ -1,0 +1,16 @@
+<h1> Welcome to my passible app! </h1>
+
+<h1><%= @documents.inspect %></h1>
+
+<% @documents.each do |document| %>
+  <div>
+  	<h1><%= document.documenttitle %></h1><br />
+  	<h2><%= document.username %></h2><br />
+  	<p><%= document.transcription %></p><br />
+  	<b><%= document.locationtag %></b><br />
+    <b><%= document.datetag %></b><br />
+    <a><%= document.uploadedimage %></a><br />
+   </div>
+   
+   <hr />
+<% end %>    
