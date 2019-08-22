@@ -1,12 +1,8 @@
-<h1> Welcome to my passible app! </h1>
-
-<h1><%= @documents.inspect %></h1>
-
 <% @documents.each do |document| %>
-  <div class="booyah-box">
-  	<h1><%= document.documenttitle %></h1><br />
+  <div class="booyah-box col-10 offset-1">
+  	<h1><%= document.documenttitle %></h1>
   	<h2><%= document.username %></h2><br />
-  	<p><%= document.transcription %></p><br />
+  	<p><%= document.transcription %></p><br /><br />
   	<b><%= document.locationtag %></b><br />
     <b><%= document.datetag %></b><br />
     <a><%= document.uploadedimage %></a><br />
